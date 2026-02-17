@@ -37,8 +37,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-# Theme
-theme: minima
+# Theme (disabled — using custom layouts)
+# theme: minima
 
 # Exclude from build
 exclude:

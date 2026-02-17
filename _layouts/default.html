@@ -6,8 +6,8 @@
   <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
   <meta name="description" content="{{ page.description | default: page.excerpt | strip_html | truncate: 160 }}">
   {% seo %}
-  <link rel="alternate" type="application/rss+xml" title="Keepsake Blog (FR)" href="/feed/fr.xml">
-  <link rel="alternate" type="application/rss+xml" title="Keepsake Blog (EN)" href="/feed/en.xml">
+  <link rel="alternate" type="application/rss+xml" title="Keepsake Blog (FR)" href="{{ site.baseurl }}/feed/fr.xml">
+  <link rel="alternate" type="application/rss+xml" title="Keepsake Blog (EN)" href="{{ site.baseurl }}/feed/en.xml">
   <style>
     :root { --text: #1a1a1a; --bg: #fff; --accent: #2563eb; --muted: #6b7280; --border: #e5e7eb; }
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -38,10 +38,10 @@
 </head>
 <body>
   <header>
-    <a href="/">Keepsake Blog</a>
+    <a href="{{ site.baseurl }}/">Keepsake Blog</a>
     <nav>
-      <a href="/fr/">Français</a>
-      <a href="/en/">English</a>
+      <a href="{{ site.baseurl }}/fr/">Français</a>
+      <a href="{{ site.baseurl }}/en/">English</a>
       <a href="https://keepsake.place">Keepsake</a>
     </nav>
   </header>
