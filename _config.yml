@@ -1,0 +1,48 @@
+title: Keepsake Blog
+description: "Organize your life, relationships, and ideas. The Keepsake blog."
+url: "https://blog.keepsake.place"
+baseurl: ""
+
+# Build
+markdown: kramdown
+permalink: /:categories/:year/:month/:title/
+
+# Collections — two separate blogs
+collections:
+  posts_fr:
+    output: true
+    permalink: /fr/:year/:month/:title/
+  posts_en:
+    output: true
+    permalink: /en/:year/:month/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts_fr"
+    values:
+      layout: "post"
+      lang: "fr"
+  - scope:
+      path: ""
+      type: "posts_en"
+    values:
+      layout: "post"
+      lang: "en"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# Theme
+theme: minima
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - .obsidian

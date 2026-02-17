@@ -1,0 +1,15 @@
+---
+layout: default
+title: Blog Keepsake
+lang: fr
+---
+<h1>Blog</h1>
+<ul class="post-list">
+  {% for post in site.posts_fr %}
+  <li>
+    <span class="date">{{ post.date | date: "%d/%m/%Y" }}</span>
+    <br><a href="{{ post.url }}">{{ post.title }}</a>
+    {% if post.description %}<br><small>{{ post.description }}</small>{% endif %}
+  </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: 'en' }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{{ page.description | default: page.excerpt | strip_html | truncate: 160 }}">
+  {% seo %}
+  <link rel="alternate" type="application/rss+xml" title="Keepsake Blog (FR)" href="/feed/fr.xml">
+  <link rel="alternate" type="application/rss+xml" title="Keepsake Blog (EN)" href="/feed/en.xml">
+  <style>
+    :root { --text: #1a1a1a; --bg: #fff; --accent: #2563eb; --muted: #6b7280; --border: #e5e7eb; }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif; color: var(--text); background: var(--bg); line-height: 1.7; max-width: 680px; margin: 0 auto; padding: 2rem 1.5rem; }
+    header { margin-bottom: 3rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--border); }
+    header a { color: var(--text); text-decoration: none; font-weight: 700; font-size: 1.25rem; }
+    header nav { margin-top: 0.5rem; }
+    header nav a { color: var(--muted); font-size: 0.9rem; margin-right: 1rem; }
+    h1 { font-size: 2rem; line-height: 1.3; margin-bottom: 0.5rem; }
+    h2 { font-size: 1.4rem; margin-top: 2rem; margin-bottom: 0.75rem; }
+    h3 { font-size: 1.15rem; margin-top: 1.5rem; margin-bottom: 0.5rem; }
+    p { margin-bottom: 1.25rem; }
+    a { color: var(--accent); }
+    ul, ol { margin-bottom: 1.25rem; padding-left: 1.5rem; }
+    li { margin-bottom: 0.35rem; }
+    blockquote { border-left: 3px solid var(--accent); padding-left: 1rem; color: var(--muted); margin-bottom: 1.25rem; }
+    code { background: #f3f4f6; padding: 0.15em 0.4em; border-radius: 3px; font-size: 0.9em; }
+    pre { background: #f3f4f6; padding: 1rem; border-radius: 6px; overflow-x: auto; margin-bottom: 1.25rem; }
+    pre code { background: none; padding: 0; }
+    img { max-width: 100%; height: auto; border-radius: 6px; margin: 1.5rem 0; }
+    .meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 2rem; }
+    .post-list { list-style: none; padding: 0; }
+    .post-list li { margin-bottom: 1.5rem; }
+    .post-list .date { color: var(--muted); font-size: 0.85rem; }
+    footer { margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--border); color: var(--muted); font-size: 0.85rem; }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="/">Keepsake Blog</a>
+    <nav>
+      <a href="/fr/">Français</a>
+      <a href="/en/">English</a>
+      <a href="https://keepsake.place">Keepsake</a>
+    </nav>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer>
+    <p>&copy; {{ site.time | date: '%Y' }} <a href="https://keepsake.place">Keepsake</a> — by <a href="https://nicolascroce.com">Nicolas Croce</a></p>
+  </footer>
+</body>
+</html>
