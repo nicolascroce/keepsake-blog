@@ -2,11 +2,28 @@
 layout: default
 ---
 <article>
-  <h1>{{ page.title }}</h1>
-  <p class="meta">
-    {{ page.date | date: "%d %B %Y" }}
-    {% if page.author %} — {{ page.author }}{% endif %}
-    {% for tag in page.tags %}<span class="tag">#{{ tag }}</span> {% endfor %}
-  </p>
+  <a href="{{ site.baseurl }}/{{ page.lang }}/" class="back-link">
+    &larr; {% if page.lang == 'fr' %}Retour aux articles{% else %}Back to articles{% endif %}
+  </a>
+
+  <div class="top-banner-cta">
+    {% if page.lang == 'fr' %}
+    <span><strong>Keepsake</strong> — Organisez votre vie, vos relations et vos idées.</span>
+    <a href="https://app.keepsake.place/pricing?lang=fr">Essai gratuit &rarr;</a>
+    {% else %}
+    <span><strong>Keepsake</strong> — Organize your life, relationships, and ideas.</span>
+    <a href="https://app.keepsake.place/pricing?lang=en">Free trial &rarr;</a>
+    {% endif %}
+  </div>
+
+  <div class="article-header">
+    <h1>{{ page.title }}</h1>
+    <div class="meta">
+      <span>{{ page.date | date: "%d %B %Y" }}</span>
+      {% if page.author %}<span>&middot; {{ page.author }}</span>{% endif %}
+      {% for tag in page.tags %}<span class="tag">#{{ tag }}</span>{% endfor %}
+    </div>
+  </div>
+
   {{ content }}
 </article>
