@@ -1,7 +1,7 @@
 title: Keepsake Blog
 description: "Organize your life, relationships, and ideas. The Keepsake blog."
-url: "https://blog.keepsake.place"
-baseurl: ""
+url: "https://nicolascroce.github.io"
+baseurl: "/keepsake-blog"
 
 # Build
 markdown: kramdown
