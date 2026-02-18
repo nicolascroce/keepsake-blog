@@ -4,6 +4,7 @@ description: "Keepsake gère maintenant les entreprises en plus des contacts, et
 date: 2026-02-17
 author: Nicolas Croce
 tags: [changelog, produit]
+ref: companies-text-editor
 ---
 
 Deux nouveautés cette semaine dans Keepsake.

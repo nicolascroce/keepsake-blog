@@ -4,6 +4,7 @@ description: "Keepsake now manages companies alongside contacts, and the text ed
 date: 2026-02-17
 author: Nicolas Croce
 tags: [changelog, product]
+ref: companies-text-editor
 ---
 
 Two updates this week in Keepsake.
