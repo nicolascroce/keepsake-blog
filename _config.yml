@@ -53,4 +53,6 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
+  - CLAUDE.md
+  - PROMPT-NOUVEL-ARTICLE.md
   - .obsidian

@@ -111,10 +111,23 @@ description: "Description courte pour le SEO (< 160 caractères)"
 date: YYYY-MM-DD
 author: Nicolas Croce
 tags: [changelog, produit]
+ref: slug-commun-fr-en
 ---
 
 Contenu de l'article en Markdown...
 ```
+
+### Champ `ref` (OBLIGATOIRE pour le SEO bilingue)
+
+Le champ `ref` dans le front matter lie les versions FR et EN d'un même article. **Il doit être identique** dans les deux versions. C'est ce qui permet aux balises `hreflang` de pointer vers la traduction exacte plutôt que vers la page d'accueil.
+
+Exemple :
+- `_posts_fr/2026-02-17-entreprises-et-editeur-texte.md` → `ref: companies-text-editor`
+- `_posts_en/2026-02-17-companies-and-text-editor.md` → `ref: companies-text-editor`
+
+**Si `ref` est absent**, le hreflang pointera vers la page d'accueil de l'autre langue (fallback). Ça fonctionne mais c'est mauvais pour le SEO.
+
+**Convention de nommage du `ref`** : utiliser le slug anglais de l'article, sans date. Exemples : `companies-text-editor`, `mental-load-guide`, `weekly-review-habit`.
 
 ### Nommage des fichiers
 
