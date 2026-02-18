@@ -3,37 +3,41 @@ layout: default
 title: Blog Keepsake
 lang: fr
 ---
-<div class="hero-cta">
-  <h2>Un esprit enfin clair.</h2>
-  <p class="hero-subtitle">Videz votre tête. Planifiez votre journée. N'oubliez personne. Tout est connecté.</p>
-  <form class="signup-form" data-signup-form data-lang="fr">
-    <input type="email" placeholder="Votre email" required autocomplete="email">
-    <button type="submit">
-      <span class="btn-text">Essai gratuit</span>
-      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
-    </button>
-  </form>
-  <p class="signup-hint">Un clic — vous y êtes. Sans carte bancaire. 7 jours gratuits.</p>
-</div>
+<section class="hero-cta">
+  <div class="wrapper">
+    <h2>Un esprit enfin clair.</h2>
+    <p class="hero-subtitle">Videz votre tête. Planifiez votre journée. N'oubliez personne. Tout est connecté.</p>
+    <form class="signup-form" data-signup-form data-lang="fr">
+      <input type="email" placeholder="Votre email" required autocomplete="email">
+      <button type="submit">
+        <span class="btn-text">Essai gratuit</span>
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+      </button>
+    </form>
+    <p class="signup-hint">Un clic — vous y êtes. Sans carte bancaire. 7 jours gratuits.</p>
+  </div>
+</section>
 
-<div class="page-header">
-  <h1>Articles</h1>
-  <p class="subtitle">Organisation personnelle, relations, idées — le blog Keepsake.</p>
-</div>
+<div class="wrapper">
+  <div class="page-header">
+    <h1>Articles</h1>
+    <p class="subtitle">Organisation personnelle, relations, idées — le blog Keepsake.</p>
+  </div>
 
-<ul class="post-list">
-  {% for post in site.posts_fr %}
-  <li>
-    <a href="{{ post.url }}" class="post-card">
-      <span class="post-date">{{ post.date | date: "%d/%m/%Y" }}</span>
-      <span class="post-title">{{ post.title }}</span>
-      {% if post.description %}<span class="post-description">{{ post.description }}</span>{% endif %}
-      {% if post.tags.size > 0 %}
-      <span class="post-tags">
-        {% for tag in post.tags %}<span>#{{ tag }}</span>{% endfor %}
-      </span>
-      {% endif %}
-    </a>
-  </li>
-  {% endfor %}
-</ul>
+  <ul class="post-list">
+    {% for post in site.posts_fr %}
+    <li>
+      <a href="{{ post.url }}" class="post-card">
+        <span class="post-date">{{ post.date | date: "%d/%m/%Y" }}</span>
+        <span class="post-title">{{ post.title }}</span>
+        {% if post.description %}<span class="post-description">{{ post.description }}</span>{% endif %}
+        {% if post.tags.size > 0 %}
+        <span class="post-tags">
+          {% for tag in post.tags %}<span>#{{ tag }}</span>{% endfor %}
+        </span>
+        {% endif %}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

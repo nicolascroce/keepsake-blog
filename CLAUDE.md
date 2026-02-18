@@ -252,21 +252,45 @@ git push origin main    # Déploie automatiquement
 
 ---
 
+## Stratégie de liens croisés
+
+### Principes
+- Chaque article SEO → 1-2 liens vers keepsake.place ou app.keepsake.place
+- La documentation (Notion/site) peut linker vers des articles blog qui détaillent un use case
+- Le site marketing peut linker vers des articles blog pour du contenu approfondi
+
+### Quand on publie un article
+1. Identifier les pages doc/marketing qui pourraient bénéficier d'un lien vers cet article
+2. Ajouter des liens retour dans l'article vers la doc pertinente
+3. Mettre à jour la doc si un article de blog donne des exemples concrets d'une fonctionnalité
+
+### Types de liens
+
+| Depuis | Vers | Quand |
+|--------|------|-------|
+| Article blog | keepsake.place | Toujours (CTA naturel) |
+| Article blog | Documentation | Quand on mentionne une fonctionnalité |
+| Documentation | Article blog | Quand un article donne des exemples pratiques |
+| Site marketing | Article blog | Pour du contenu approfondi sur un sujet |
+
+---
+
 ## Design
 
-Le blog utilise un **design custom minimal** (pas de thème Jekyll externe) :
+Le blog utilise un **design custom Keepsake Light** (pas de thème Jekyll externe) :
 - CSS inline dans `_layouts/default.html`
-- Typographie système (`-apple-system, BlinkMacSystemFont, system-ui`)
-- Max-width 680px, centré
-- Palette : `--text: #1a1a1a`, `--accent: #2563eb`, `--muted: #6b7280`
+- Typographie : Inter (Google Fonts) + system stack
+- Max-width 720px, centré
+- Palette Keepsake Light : `--bg: #f6f3ee`, `--bg-surface: #ffffff`, `--text: #1c1917`, `--accent: #2563eb`, `--border: #ddd8d2`
+- Header blanc avec ombre subtile, logo SVG Keepsake
+- Hero CTA pleine largeur avec formulaire d'inscription
 - Responsive (mobile-first)
 
 Pour modifier le design, éditer directement le `<style>` dans `_layouts/default.html`.
 
 ### Améliorations prévues
-- [ ] Design aligné avec l'identité visuelle de keepsake.place (couleurs, typo)
 - [ ] Images / illustrations pour les articles
-- [ ] Partage social (Open Graph images)
+- [ ] Partage social (Open Graph images custom par article)
 - [ ] Pagination si beaucoup d'articles
 
 ---

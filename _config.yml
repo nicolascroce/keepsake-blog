@@ -16,8 +16,16 @@ collections:
     output: true
     permalink: /en/:year/:month/:title/
 
+# Author
+author:
+  name: Nicolas Croce
+
 # Defaults
 defaults:
+  - scope:
+      path: ""
+    values:
+      image: /icons/icon-512.png
   - scope:
       path: ""
       type: "posts_fr"
