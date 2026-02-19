@@ -26,7 +26,8 @@ lang: en
   </div>
 
   <ul class="post-list">
-    {% for post in site.posts_en %}
+    {% assign sorted_posts = site.posts_en | sort: "date" | reverse %}
+    {% for post in sorted_posts %}
     <li>
       <a href="{{ post.url }}" class="post-card">
         <span class="post-date">{{ post.date | date: "%B %d, %Y" }}</span>
