@@ -1,6 +1,6 @@
 ---
 title: "New: Company profiles in Keepsake"
-description: "Create company profiles, link your contacts to them, and find all related tasks, notes, and interactions in one place — whether they belong to the company or to its team members."
+description: "Create company profiles, link your contacts, and find all related tasks, notes, and interactions in one place."
 date: 2026-02-19
 author: Nicolas Croce
 tags: [crm, companies, contacts, organization]

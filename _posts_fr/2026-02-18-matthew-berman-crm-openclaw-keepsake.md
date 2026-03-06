@@ -1,6 +1,6 @@
 ---
-title: "J'ai analysé les 26 prompts de Matthew Berman pour son CRM personnel — voilà ce que ça implique"
-description: "Matthew Berman a construit un CRM personnel impressionnant avec OpenClaw : 20 tables SQLite, 22 skills custom, des semaines de dev. Voilà ce que Keepsake fait out of the box."
+title: "Les 26 prompts CRM de Matthew Berman, analysés"
+description: "Matthew Berman a construit un CRM avec OpenClaw : 20 tables SQLite, 22 skills, des semaines de dev. Keepsake le fait nativement."
 date: 2026-02-18
 author: Nicolas Croce
 tags: [crm, productivite, organisation]

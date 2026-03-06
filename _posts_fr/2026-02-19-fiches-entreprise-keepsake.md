@@ -1,6 +1,6 @@
 ---
 title: "Nouveau : gestion des entreprises dans Keepsake"
-description: "Créez des fiches entreprise, rattachez-y vos contacts, et retrouvez en un endroit toutes les tâches, notes et interactions liées — que ce soit à l'entreprise ou à ses collaborateurs."
+description: "Créez des fiches entreprise, rattachez-y vos contacts, et retrouvez en un endroit toutes les tâches, notes et interactions liées."
 date: 2026-02-19
 author: Nicolas Croce
 tags: [crm, entreprise, contacts, organisation]

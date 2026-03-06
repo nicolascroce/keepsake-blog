@@ -1,5 +1,5 @@
 ---
-title: "Keepsake 0.12 : tags partout, sélection multiple, et notes qui ne perdent plus rien"
+title: "Keepsake 0.12 : tags, sélection multiple et notes"
 description: "Ajoutez des tags en un clic, gérez vos notes par lots, et profitez de la sauvegarde automatique. Keepsake 0.12 élimine les frictions au quotidien."
 date: 2026-03-06
 author: Nicolas Croce

@@ -1,5 +1,5 @@
 ---
-title: "Keepsake 0.12: tags everywhere, batch select, and notes that never lose anything"
+title: "Keepsake 0.12: tags, batch select, and smarter notes"
 description: "Add tags in one click, process notes in bulk, and enjoy auto-save. Keepsake 0.12 removes the daily friction from managing your personal CRM."
 date: 2026-03-06
 author: Nicolas Croce

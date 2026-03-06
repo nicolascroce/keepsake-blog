@@ -1,5 +1,5 @@
 ---
-title: "I Analyzed Matthew Berman's 26 OpenClaw CRM Prompts — Here's What It Takes to Build One"
+title: "Matthew Berman's 26 CRM Prompts, Analyzed"
 description: "Matthew Berman built an impressive personal CRM with OpenClaw: 20 SQLite tables, 22 custom skills, weeks of work. Here's what Keepsake does out of the box."
 date: 2026-02-18
 author: Nicolas Croce

@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "La meilleure application journal avec contacts : pourquoi les deux ensemble"
-description: "La plupart des applis journal ignorent vos relations. La plupart des gestionnaires de contacts ignorent votre vie intérieure. Voici pourquoi les meilleures sont celles qui connectent les deux."
+title: "Application journal avec contacts : pourquoi les deux"
+description: "Les applis journal ignorent vos relations. Les gestionnaires de contacts ignorent votre vie intérieure. Voici pourquoi connecter les deux."
 date: 2026-02-28
 author: nicolas
 tags: [journal, contacts, crm-personnel, relations, organisation]

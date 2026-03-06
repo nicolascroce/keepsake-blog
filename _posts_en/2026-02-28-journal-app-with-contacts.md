@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "The Best Journal App with Contacts: Why You Need Both Together"
-description: "Most journal apps ignore your relationships. Most contact managers ignore your inner life. Here's why the best journal app with contacts is one that connects the two."
+title: "Best Journal App with Contacts: Why Both Together"
+description: "Most journal apps ignore your relationships. Most contact managers ignore your inner life. Here's why you need both connected."
 date: 2026-02-28
 author: nicolas
 tags: [journal, contacts, personal-crm, relationships, productivity]
