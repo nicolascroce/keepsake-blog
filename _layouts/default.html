@@ -95,7 +95,10 @@
       -webkit-backdrop-filter: blur(12px);
     }
 
-    .site-header .wrapper {
+    .site-header .header-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -127,7 +130,13 @@
     .site-nav {
       display: flex;
       align-items: center;
-      gap: 1.5rem;
+      gap: 2rem;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
     }
 
     .site-nav > a {
@@ -138,15 +147,26 @@
       transition: color 0.2s ease;
     }
 
-    .site-nav > a:not(.nav-cta):hover {
+    .site-nav > a:hover {
       color: var(--header-text);
-      background: rgba(255, 255, 255, 0.08);
+    }
+
+    .nav-login {
+      color: var(--header-text-muted);
+      text-decoration: none;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: color 0.2s ease;
+    }
+
+    .nav-login:hover {
+      color: var(--header-text);
     }
 
     .nav-cta {
       display: inline-flex;
       align-items: center;
-      padding: 0.45rem 1rem;
+      padding: 0.5rem 1rem;
       background: var(--accent);
       color: #ffffff !important;
       border-radius: 8px;
@@ -154,7 +174,6 @@
       font-weight: 600;
       text-decoration: none;
       transition: all 0.2s ease;
-      margin-left: 0.25rem;
     }
 
     .nav-cta:hover {
@@ -701,11 +720,11 @@
       .signup-form button { justify-content: center; }
       .footer-cta { padding: 2.5rem 0; }
       .footer-cta h2 { font-size: 1.375rem; }
-      .site-header .wrapper { flex-wrap: wrap; gap: 0.5rem; }
-      .site-nav { flex-wrap: wrap; gap: 0.05rem !important; }
-      .site-nav > a { padding: 0.25rem 0.4rem; font-size: 0.75rem; }
-      .nav-cta { padding: 0.25rem 0.6rem; font-size: 0.75rem; }
-      .lang-switch { margin-left: 0.1rem; }
+      .site-header .header-inner { flex-wrap: wrap; gap: 0.5rem; height: auto; padding: 0.5rem 1.25rem; }
+      .site-nav { display: none; }
+      .header-right { gap: 0.5rem; }
+      .nav-login { display: none; }
+      .nav-cta { padding: 0.3rem 0.6rem; font-size: 0.75rem; }
       .lang-switch a { padding: 0.15rem 0.35rem; font-size: 0.7rem; }
       .site-footer .wrapper { flex-direction: column; align-items: flex-start; }
       .post-card { padding: 1rem 0; }
@@ -716,7 +735,7 @@
 </head>
 <body>
   <header class="site-header">
-    <div class="wrapper">
+    <div class="header-inner">
       <a href="{{ site.baseurl }}/" class="site-logo">
         <img class="logo-icon" src="{{ site.baseurl }}/icons/logo-48.png" alt="Keepsake" width="20" height="20">
         Keepsake
@@ -724,18 +743,20 @@
       </a>
       <nav class="site-nav">
         {% if page.lang == 'fr' %}
+        <a href="https://keepsake.place/fr">Accueil</a>
         <a href="https://app.keepsake.place/pricing?lang=fr">Tarifs</a>
-        <a href="https://keepsake.place/fr/ai">IA</a>
         <a href="https://keepsake.place/fr/help">Aide</a>
-        <a href="https://app.keepsake.place/?lang=fr">Connexion</a>
-        <a href="https://app.keepsake.place/pricing?lang=fr" class="nav-cta">Essai gratuit</a>
+        <a href="{{ site.baseurl }}/fr/">Blog</a>
+        <a href="https://keepsake.place/fr/ai">IA</a>
         {% else %}
+        <a href="https://keepsake.place/en">Home</a>
         <a href="https://app.keepsake.place/pricing?lang=en">Pricing</a>
-        <a href="https://keepsake.place/en/ai">AI</a>
         <a href="https://keepsake.place/en/help">Help</a>
-        <a href="https://app.keepsake.place/?lang=en">Login</a>
-        <a href="https://app.keepsake.place/pricing?lang=en" class="nav-cta">Try free</a>
+        <a href="{{ site.baseurl }}/en/">Blog</a>
+        <a href="https://keepsake.place/en/ai">AI</a>
         {% endif %}
+      </nav>
+      <div class="header-right">
         <div class="lang-switch">
           {% if page.lang == "fr" %}
             {% if page.ref %}{% assign twin = site.posts_en | where: "ref", page.ref | first %}{% endif %}
@@ -750,7 +771,14 @@
             <a href="{{ site.baseurl }}/en/">EN</a>
           {% endif %}
         </div>
-      </nav>
+        {% if page.lang == 'fr' %}
+        <a href="https://app.keepsake.place/?lang=fr" class="nav-login">Connexion</a>
+        <a href="https://app.keepsake.place/pricing?lang=fr" class="nav-cta">Essai gratuit</a>
+        {% else %}
+        <a href="https://app.keepsake.place/?lang=en" class="nav-login">Log in</a>
+        <a href="https://app.keepsake.place/pricing?lang=en" class="nav-cta">Try free</a>
+        {% endif %}
+      </div>
     </div>
   </header>
 
