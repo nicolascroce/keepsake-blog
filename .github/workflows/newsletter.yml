@@ -1,0 +1,36 @@
+name: Newsletter — Envoyer nouveaux posts via Resend
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '_posts_fr/**'
+      - '_posts_en/**'
+  workflow_dispatch:
+    inputs:
+      test_file:
+        description: 'Chemin du post à tester (ex: _posts_fr/2026-03-06-mon-post.md)'
+        required: false
+
+jobs:
+  send-newsletter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2  # nécessaire pour comparer avec le commit précédent
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install resend gray-matter
+
+      - name: Détecter nouveaux posts et envoyer newsletters
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          TEST_FILE: ${{ github.event.inputs.test_file }}
+        run: node .github/scripts/send-newsletter.js
