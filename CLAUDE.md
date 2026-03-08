@@ -29,6 +29,26 @@ Articles sur l'organisation personnelle, la charge mentale, les relations, la pr
 ### 2. Annonces produit (Changelog)
 Articles courts annonçant les nouvelles fonctionnalités de Keepsake. Rédigés dans le ton de Nicolas : direct, personnel, pas corporate. Source : les changelogs Obsidian.
 
+### Les 4 Axes de Communication Keepsake (boussole éditoriale)
+
+Tous les articles du blog doivent s'ancrer dans un ou plusieurs de ces axes. On part toujours de l'utilisateur et de son vécu, jamais de la technique.
+
+1. **Capture → Inbox → Action** — "Capturez tout. N'oubliez rien."
+   - Clarté mentale, confiance, rien ne passe entre les mailles
+   - Sujets blog : charge mentale, GTD simplifié, inbox zero personnel, capturer les idées
+
+2. **Le rituel du jour** — "Commencez clair. Finissez serein."
+   - Journées structurées, soirées sereines, bon sommeil, zéro procrastination
+   - Sujets blog : morning routine, planification quotidienne, Time Block, finir sa journée
+
+3. **Les contacts liés à tout** — "Devenez la personne qui se souvient."
+   - Être fiable, se souvenir, réputation composée
+   - Sujets blog : networking authentique, entretenir ses relations, CRM personnel, capital social
+
+4. **Tags & Pages (projets)** — "Vos projets, votre espace, votre rythme."
+   - Tout sur un projet au même endroit, calme et focus
+   - Sujets blog : gestion de projets perso, second brain, espace de travail numérique
+
 ### Philosophie éditoriale
 - **Valeur d'abord.** Si l'article ne tient pas sans Keepsake, il n'est pas assez bon.
 - **Ton de Nicolas.** Direct, profond, personnel. Comme s'il écrivait à un ami intelligent.

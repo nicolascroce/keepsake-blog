@@ -130,7 +130,7 @@ async function sendBroadcast(post) {
   console.log(`   URL : ${post.url}`);
   console.log(`   Segment : ${segmentId}`);
 
-  // 1. Créer le broadcast
+  // 1. Créer le broadcast ciblé sur le segment (sans audience_id)
   const createRes = await fetch('https://api.resend.com/broadcasts', {
     method: 'POST',
     headers: {
@@ -138,7 +138,7 @@ async function sendBroadcast(post) {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      audience_id: AUDIENCE_ID,
+      segment_id: segmentId,
       from,
       subject: post.title,
       html: buildEmailHtml(post),
@@ -155,14 +155,14 @@ async function sendBroadcast(post) {
 
   console.log(`   Broadcast créé : ${broadcast.id}`);
 
-  // 2. Envoyer le broadcast au segment
+  // 2. Envoyer
   const sendRes = await fetch(`https://api.resend.com/broadcasts/${broadcast.id}/send`, {
     method: 'POST',
     headers: {
       'Authorization': `Bearer ${process.env.RESEND_API_KEY}`,
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ segment_id: segmentId }),
+    body: JSON.stringify({}),
   });
 
   const sendData = await sendRes.json();
