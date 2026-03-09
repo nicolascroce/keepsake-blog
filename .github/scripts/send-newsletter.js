@@ -187,9 +187,13 @@ async function main() {
   console.log(`${newFiles.length} nouveau(x) post(s) détecté(s) :`);
   newFiles.forEach(f => console.log(`  - ${f}`));
 
-  for (const filePath of newFiles) {
-    const post = parsePost(filePath);
+  for (let i = 0; i < newFiles.length; i++) {
+    const post = parsePost(newFiles[i]);
     if (!post) continue;
+    if (i > 0) {
+      // Resend rate limit: 2 req/sec — wait 1.5s between broadcasts
+      await new Promise(resolve => setTimeout(resolve, 1500));
+    }
     await sendBroadcast(post);
   }
 
