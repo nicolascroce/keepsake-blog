@@ -1,90 +1,68 @@
 ---
-title: "Capture fast, organize well: QuickNotes, Notes, and the new Keepsake editor"
-description: "Keepsake now distinguishes QuickNotes (instant capture) from Notes (archived knowledge). With a rich text editor, dedicated pages, and permanent links."
+title: "QuickNotes, Notes, and rich editor: everything that changes in Keepsake"
+description: "Keepsake now distinguishes QuickNotes (instant capture) from Notes (archived knowledge). With a rich text editor, dedicated pages, permanent links, and context-aware creation."
 date: 2026-04-03
 author: Nicolas Croce
 tags: [changelog, product, notes, organization]
 ref: quicknotes-notes-rich-editor-keepsake
 ---
 
-There was a moment when I realized my notes were useless.
+Keepsake introduces a major overhaul of note management. Two distinct note types, a rich text editor, dedicated pages, and permanent links — all designed to separate fast capture from lasting organization.
 
-Not because I wasn't taking notes — I was taking them all the time. The problem was that I was taking them all in the same place, the same way, and they all ended up in the same swamp. A brilliant idea sat next to a grocery list. An important meeting summary got wedged between "buy milk" and "watch that YouTube video."
+## QuickNotes and Notes: two tools, two purposes
 
-My Inbox was full. And the fuller it got, the less I looked at it.
+Until now, all notes worked the same way. From today, [Keepsake](https://keepsake.place?ref=blog) makes a clear distinction between two types.
 
-## The real problem: putting everything in one place
+**QuickNotes** are for capturing an idea, a piece of information, or a reminder in seconds. They land in the Inbox and stay there until you decide what to do with them: turn them into a task, archive them as a Note, or delete them. It's the zero-friction capture tool.
 
-Most note-taking tools give you one type of note. You capture, you capture, you capture. And one day you're staring at 400 notes you don't know what to do with.
+**Notes** are your knowledge base. A meeting summary, a procedure, ideas for a project, information linked to a contact. Notes are archived, organized by tags and contacts, and findable at any time.
 
-It's like having a single drawer in your desk. You put your invoices, your sticky notes, your photos, your contracts in it. It works at first. After six months, you stop opening the drawer.
+<mark>In short: a QuickNote is a sticky note. A Note is a filed index card.</mark>
 
-The problem isn't capture. Capture is something [Keepsake](https://keepsake.place?ref=blog) has done well since day one — the QuickNote bar is always there, always ready, zero friction.
+To learn more about how QuickNotes work, see the [Help Center article](https://keepsake.place/en/help/quicknotes). The full note lifecycle (capture, archiving, organization) is detailed in [Notes: from capture to archive](https://keepsake.place/en/help/notes).
 
-The problem is what happens **after**.
+## Dedicated pages with auto-save
 
-## Two tools, two purposes
+Every Note now has its own page. Not a modal, not a side panel — a full page where you can write and organize your information.
 
-Starting today, Keepsake makes a clear distinction between two types of notes.
+Saving is automatic. You write, the content is saved continuously. No "Save" button, no risk of losing work.
 
-**QuickNotes** are your mental safety net. You have an idea? Write it down. Something you can't forget? Write it down. A book someone recommended? Write it down. It's fast, it's raw, it's temporary. It lands in your Inbox and stays there until you decide what to do with it.
+Archived notes display as compact cards with a content preview, making it easy to find the information you're looking for at a glance.
 
-**Notes** are your knowledge base. A meeting summary you want to keep. A procedure you follow regularly. Ideas for a project. Content linked to a contact or a tag. Notes are archived, organized, findable. They have their own page. They live outside the Inbox.
+## A rich editor to structure your notes
 
-The difference is simple: a QuickNote is a sticky note. A Note is an index card.
+The Note editor now supports rich formatting: headings, bold, italic, bullet lists, and numbered lists. A floating toolbar appears when you select text.
 
-## Index cards, exactly
+Tags autocomplete when you type `#` or `[[`, and contacts appear with `@`. This lets you quickly link your notes to projects and contacts without leaving the editor.
 
-If you know Ryan Holiday's method — inherited from Robert Greene, itself inspired by Montaigne and the Stoics — you know that index cards are one of the most powerful tools for building a personal knowledge base.
+To understand how tags organize your notes, tasks, and contacts in one place, see [Tags & Pages](https://keepsake.place/en/help/tags-and-pages).
 
-The idea: every important piece of information goes on a card. Every card has a category. Cards are filed in boxes. And when you need something, you know exactly where to look.
+## Permanent links for every note
 
-That's exactly what Notes do in Keepsake. Except instead of cardboard boxes, you have tags and contacts. And instead of searching manually, you have a permanent link and instant search.
+Every Note has a unique, permanent URL. You can bookmark it in your browser, paste it into another application, or share it.
 
-Archived notes now display as **compact cards** — with enough of a content preview to find information at a glance. Like index cards, but digital.
+This means your notes become stable references, accessible directly without navigating through the app.
 
-## Every note has its own page
+## Context-aware creation from tag and contact pages
 
-This is the most visible change. When you open a Note, it gets its own dedicated page. Not a modal, not a side panel — a real page.
+When you create a note from a tag page (for example `#Home project#`), it's automatically archived and linked to that tag. It doesn't go through the Inbox.
 
-On that page:
-- **Auto-save.** You write, it saves. No button, no risk of losing work.
-- **Rich text formatting.** Bold, italic, lists, headings — a rich editor with a floating toolbar that appears when you select text.
-- **Tag and contact autocomplete.** Type `#` or `[[` and your existing tags appear. Type `@` and your contacts do too.
-- **Copy a permanent link.** Every note has its own unique URL. Bookmark it, paste it in another app, send it to someone.
+The same behavior applies from a contact's profile. If you're on Sophie's page and create a note, it will be directly linked to Sophie and archived.
 
-This is the writing experience I wanted from day one.
+The principle: if you're already in a context, the information you add is already organized. No intermediate step needed.
 
-## Create a Note from context
-
-Here's a detail that changes a lot in practice.
-
-When you're on a tag page — say `#Home project#` — and you create a note, it no longer lands in the Inbox. It's directly archived and linked to that tag.
-
-Same thing from a contact's profile. You're on Sophie's page, you create a note? It's linked to Sophie, archived, ready to be found.
-
-It makes sense: if you're already in a context and you're adding information, you don't need to go through the Inbox. The information is already organized.
+To learn more about contact profiles and the information you can attach to them, see [Contact Profiles](https://keepsake.place/en/help/contact-profiles).
 
 ## Cmd+K: paste a link, navigate
 
-Small feature, big impact.
+Quick search (`Cmd+K`) now accepts Keepsake links. Copy the URL of a note, contact, tag, or task, paste it into the search bar, and you're taken directly to that page.
 
-You've copied a Keepsake link — from your browser, a message, or anywhere? Open search with `⌘K`, paste the link, and Keepsake takes you directly to that page.
+This is especially useful if you keep Keepsake links in other tools (task manager, messaging app, documents).
 
-Works with any app URL: notes, contacts, tags, tasks, journal.
+## Company selector on contacts
 
-## Companies linked to contacts
+You can now associate a company with a contact directly from their profile. Select an existing company from the list or create one on the fly. No more manually typing the name each time.
 
-You can now associate a company with a contact directly from their profile. Select an existing company or create one on the fly — no more typing the name every time in a text field.
+## Available now
 
-## The bigger picture
-
-All these improvements revolve around one idea: **separate capture from organization**.
-
-Your brain isn't made for holding things — it's made for having ideas. Capture everything with QuickNotes, without thinking. Then, at your own pace, turn what matters into structured Notes linked to your contacts and projects.
-
-It's the Capture → Inbox → Action flow. And now, every step has the right tool.
-
----
-
-*These features are available now on [Keepsake](https://keepsake.place?ref=blog). If you don't have an account yet, the free 7-day trial gives you access to everything.*
+All these features are accessible immediately on [Keepsake](https://keepsake.place?ref=blog). If you don't have an account yet, the free 7-day trial gives you access to all features.
