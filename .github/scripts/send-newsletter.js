@@ -142,7 +142,17 @@ async function sendBroadcast(post) {
       from,
       subject: post.title,
       html: buildEmailHtml(post),
-      name: `Blog ${post.lang.toUpperCase()} — ${post.title}`,
+      // Resend caps `name` at 70 chars (HTTP 422 above that). Truncate the
+      // post title with a clear ellipsis when the prefix + title exceeds the
+      // limit. The subject (sent to subscribers) is the full title; only the
+      // internal broadcast name is trimmed.
+      name: (() => {
+        const prefix = `Blog ${post.lang.toUpperCase()} — `;
+        const max = 70;
+        const room = max - prefix.length;
+        const title = post.title.length > room ? post.title.slice(0, room - 1).trimEnd() + '…' : post.title;
+        return prefix + title;
+      })(),
     }),
   });
 
