@@ -65,4 +65,4 @@ You can now associate a company with a contact directly from their profile. Sele
 
 ## Available now
 
-All these features are accessible immediately on [Keepsake](https://keepsake.place?ref=blog). If you don't have an account yet, the free 7-day trial gives you access to all features.
+All these features are accessible immediately on [Keepsake](https://keepsake.place?ref=blog). If you don't have an account yet, the free 30-day trial gives you access to all features.

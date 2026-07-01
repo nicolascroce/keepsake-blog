@@ -101,6 +101,6 @@ Keepsake is for people who think in the long term. If you're optimizing for dail
 
 But if you're building something — a career, a network, a body of work, a life — and you feel like the fragments aren't connecting the way they should, Keepsake is worth trying.
 
-[Start free for 7 days →](https://keepsake.place)
+[Start free for 30 days →](https://keepsake.place)
 
 No credit card required.

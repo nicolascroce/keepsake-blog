@@ -90,7 +90,7 @@ When you click elsewhere or open another task, saving is automatic. No "Save" bu
 
 Everything is already live. Open [Keepsake](https://keepsake.place?ref=blog) and try it.
 
-If you don't have an account yet, [the trial is free for 7 days](https://app.keepsake.place?ref=blog) — all these features are available from day one.
+If you don't have an account yet, [the trial is free for 30 days](https://app.keepsake.place?ref=blog) — all these features are available from day one.
 
 And as always, if you have a question or suggestion, reach out at [support@keepsake.place](mailto:support@keepsake.place).
 

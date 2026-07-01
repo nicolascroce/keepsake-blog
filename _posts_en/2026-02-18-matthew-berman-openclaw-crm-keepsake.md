@@ -61,4 +61,4 @@ Most of those people won't open a terminal and write prompts for three weeks. Th
 
 That's who I'm building Keepsake for.
 
-If you want to try it: **[app.keepsake.place](https://app.keepsake.place)** — 7 days free, no credit card required.
+If you want to try it: **[app.keepsake.place](https://app.keepsake.place)** — 30 days free, no credit card required.

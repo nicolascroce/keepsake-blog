@@ -101,6 +101,6 @@ Keepsake s'adresse aux gens qui pensent sur le long terme. Si vous optimisez pou
 
 Mais si vous construisez quelque chose — une carrière, un réseau, une œuvre, une vie — et que vous sentez que les fragments ne s'assemblent pas comme ils le devraient, Keepsake vaut le détour.
 
-[Essai gratuit 7 jours →](https://keepsake.place)
+[Essai gratuit 30 jours →](https://keepsake.place)
 
 Sans carte bancaire.

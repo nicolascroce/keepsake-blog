@@ -86,7 +86,7 @@ And when you type `@`, your **[companies](https://keepsake.place/en/companies?re
 
 Everything is already live. Open [Keepsake](https://keepsake.place?ref=blog) and try it.
 
-If you don't have an account yet, [the trial is free for 7 days](https://app.keepsake.place?ref=blog) — and all these features are available from day one.
+If you don't have an account yet, [the trial is free for 30 days](https://app.keepsake.place?ref=blog) — and all these features are available from day one.
 
 And as always, if you have a question or suggestion, reach out at [support@keepsake.place](mailto:support@keepsake.place).
 

@@ -86,7 +86,7 @@ Et quand vous tapez `@`, vos **[entreprises](https://keepsake.place/fr/companies
 
 Tout est déjà en ligne. Ouvrez [Keepsake](https://keepsake.place?ref=blog) et essayez.
 
-Si vous n'avez pas encore de compte, [l'essai est gratuit pendant 7 jours](https://app.keepsake.place?ref=blog) — et toutes ces fonctionnalités sont accessibles dès le premier jour.
+Si vous n'avez pas encore de compte, [l'essai est gratuit pendant 30 jours](https://app.keepsake.place?ref=blog) — et toutes ces fonctionnalités sont accessibles dès le premier jour.
 
 Et comme toujours, si vous avez une question ou une suggestion, écrivez à [support@keepsake.place](mailto:support@keepsake.place).
 

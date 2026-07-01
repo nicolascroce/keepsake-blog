@@ -65,4 +65,4 @@ Il est désormais possible d'associer une entreprise à un contact directement d
 
 ## Disponible dès maintenant
 
-Toutes ces fonctionnalités sont accessibles immédiatement sur [Keepsake](https://keepsake.place?ref=blog). Si vous n'avez pas encore de compte, l'essai gratuit de 7 jours vous donne accès à l'ensemble des fonctionnalités.
+Toutes ces fonctionnalités sont accessibles immédiatement sur [Keepsake](https://keepsake.place?ref=blog). Si vous n'avez pas encore de compte, l'essai gratuit de 30 jours vous donne accès à l'ensemble des fonctionnalités.

@@ -61,4 +61,4 @@ La plupart de ces personnes ne vont pas ouvrir un terminal et écrire des prompt
 
 C'est pour elles que je construis Keepsake.
 
-Si vous voulez essayer : **[app.keepsake.place](https://app.keepsake.place)** — 7 jours gratuits, sans carte bancaire.
+Si vous voulez essayer : **[app.keepsake.place](https://app.keepsake.place)** — 30 jours gratuits, sans carte bancaire.
