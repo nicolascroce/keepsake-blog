@@ -1,0 +1,78 @@
+# Liste de mots-clés FR — blog.keepsake.place
+#
+# Source de vérité pour le Poste 1 (SEO & contenu) de GROWTH.md.
+# Recherchée SÉPARÉMENT de la liste EN — ce n'est jamais une traduction.
+# Les deux marchés ne cherchent pas les mêmes choses avec les mêmes mots.
+#
+# Colonnes :
+#   mot_cle    — la requête visée
+#   intention  — informationnelle | comparaison | transactionnelle
+#   difficulte — faible | moyenne | forte (estimée : concurrence de la SERP)
+#   angle      — le traitement retenu (gabarit : problème / comparaison / cas d'usage)
+#   statut     — libre | en_cours | publie
+#
+# Règle de séparation (GROWTH.md § 4) : le blog n'est PAS un changelog.
+# Aucune ligne de cette liste ne doit être une annonce de release.
+#
+# Dernière revue : 2026-07-26
+
+mots_cles:
+  - mot_cle: "se souvenir des détails sur les gens"
+    intention: informationnelle
+    difficulte: faible
+    angle: "Problème — pourquoi la mémoire lâche sur les détails relationnels, et le geste qui la remplace (note de contact après chaque échange)"
+    statut: en_cours
+
+  - mot_cle: "crm personnel"
+    intention: informationnelle
+    difficulte: forte
+    angle: "Cas d'usage — ce qu'un CRM personnel change concrètement sur six mois. Tête de liste FR très peu servie, mais à attaquer une fois 5-6 articles publiés (autorité de domaine)"
+    statut: libre
+
+  - mot_cle: "gérer ses contacts professionnels tableur"
+    intention: comparaison
+    difficulte: faible
+    angle: "Comparaison — le tableur de contacts : où il tient, où il casse (relances, historique, recherche)"
+    statut: libre
+
+  - mot_cle: "méthode blocs de temps"
+    intention: informationnelle
+    difficulte: moyenne
+    angle: "Problème — planifier en blocs successifs plutôt qu'en horaires fixes ; ce qui se passe quand un bloc déborde"
+    statut: libre
+
+  - mot_cle: "prendre des notes rapidement sur mobile"
+    intention: informationnelle
+    difficulte: moyenne
+    angle: "Problème — la friction entre l'idée et sa capture ; pourquoi la plupart des apps perdent la note avant qu'elle soit écrite"
+    statut: libre
+
+  - mot_cle: "second cerveau méthode"
+    intention: informationnelle
+    difficulte: forte
+    angle: "Problème — le second cerveau qui devient un cimetière : capturer est facile, retrouver est le vrai sujet"
+    statut: libre
+
+  - mot_cle: "relancer un contact sans être lourd"
+    intention: informationnelle
+    difficulte: faible
+    angle: "Cas d'usage — la relance qui apporte quelque chose plutôt que de demander quelque chose"
+    statut: libre
+
+  - mot_cle: "organiser ses idées par projet"
+    intention: informationnelle
+    difficulte: moyenne
+    angle: "Cas d'usage — un projet rassemble notes, contacts, tâches ; l'inverse du dossier qui ne contient que des fichiers"
+    statut: libre
+
+  - mot_cle: "alternative notion prise de notes personnelle"
+    intention: comparaison
+    difficulte: moyenne
+    angle: "Comparaison — quand Notion est trop lourd pour un usage personnel quotidien"
+    statut: libre
+
+  - mot_cle: "journal quotidien application"
+    intention: transactionnelle
+    difficulte: moyenne
+    angle: "Cas d'usage — le journal de bord comme trace de décision, pas comme exercice d'introspection"
+    statut: libre

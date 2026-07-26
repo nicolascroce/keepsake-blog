@@ -1,0 +1,78 @@
+# Keyword list EN — blog.keepsake.place
+#
+# Source of truth for Poste 1 (SEO & content) in GROWTH.md.
+# Researched SEPARATELY from the FR list — it is never a translation.
+# The two markets do not search the same things with the same words.
+#
+# Columns:
+#   keyword     — the target query
+#   intent      — informational | comparison | transactional
+#   difficulty  — low | medium | high (estimated: SERP competition)
+#   angle       — the chosen treatment (template: problem / comparison / use case)
+#   status      — open | in_progress | published
+#
+# Separation rule (GROWTH.md § 4): the blog is NOT a changelog.
+# No line in this list may be a release announcement.
+#
+# Last reviewed: 2026-07-26
+
+keywords:
+  - keyword: "how to remember details about people you meet"
+    intent: informational
+    difficulty: low
+    angle: "Problem — why names and details evaporate, and the two-minute capture habit that replaces recall. Verified as a real long-tail phrasing (Dex, Monica, Clay all rank for adjacent terms)"
+    status: in_progress
+
+  - keyword: "personal crm"
+    intent: informational
+    difficulty: high
+    angle: "Use case — what a personal CRM actually changes over six months. Crowded head term (folk, Dex, Clay, Monica, crm.org); attack after 5-6 published articles"
+    status: open
+
+  - keyword: "personal crm vs spreadsheet"
+    intent: comparison
+    difficulty: low
+    angle: "Comparison — where a contacts spreadsheet holds and where it breaks (follow-ups, history, search)"
+    status: open
+
+  - keyword: "time blocking without a calendar"
+    intent: informational
+    difficulty: medium
+    angle: "Problem — sequential blocks instead of fixed hours; what to do when a block overruns"
+    status: open
+
+  - keyword: "second brain app that you actually revisit"
+    intent: informational
+    difficulty: medium
+    angle: "Problem — capture is solved, retrieval is not; the second brain as graveyard"
+    status: open
+
+  - keyword: "how to follow up without being annoying"
+    intent: informational
+    difficulty: medium
+    angle: "Use case — the follow-up that gives something instead of asking for something"
+    status: open
+
+  - keyword: "quick note app offline"
+    intent: transactional
+    difficulty: medium
+    angle: "Problem — the friction between having a thought and storing it; why most apps lose the note first"
+    status: open
+
+  - keyword: "notion alternative for personal notes"
+    intent: comparison
+    difficulty: high
+    angle: "Comparison — when Notion is too heavy for daily personal use"
+    status: open
+
+  - keyword: "keeping track of professional relationships"
+    intent: informational
+    difficulty: low
+    angle: "Use case — relationship upkeep as a system rather than a personality trait"
+    status: open
+
+  - keyword: "daily log for decisions"
+    intent: informational
+    difficulty: low
+    angle: "Use case — the daily log as a decision trail, not a journaling exercise"
+    status: open
