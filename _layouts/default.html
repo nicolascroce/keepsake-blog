@@ -3,7 +3,43 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  {% seo %}
+
+  {%- comment -%}
+    Le blog a déménagé sur https://www.keepsake.place/{lang}/blog.
+
+    Ce site n'est plus qu'une couche de redirection, le temps que le DNS de
+    blog.keepsake.place soit basculé vers Vercel (où de vraies 301 prennent
+    le relais). GitHub Pages ne sait pas émettre de 301 : on fait donc au
+    mieux, et dans cet ordre de priorité —
+
+      1. `canonical` vers la nouvelle URL : c'est ce que lisent les moteurs,
+         et c'est ce qui empêche le contenu dupliqué de pénaliser les deux
+         sites.
+      2. `noindex` : on retire explicitement l'ancienne page de l'index.
+      3. Rafraîchissement méta + redirection JS : pour les humains, qui n'ont
+         aucune raison d'atterrir sur une copie figée.
+  {%- endcomment -%}
+  {%- assign new_base = "https://www.keepsake.place" -%}
+  {%- if page.collection == "posts_fr" or page.collection == "posts_en" -%}
+    {%- assign new_url = new_base | append: "/" | append: page.lang | append: "/blog/" | append: page.slug -%}
+  {%- elsif page.lang -%}
+    {%- assign new_url = new_base | append: "/" | append: page.lang | append: "/blog" -%}
+  {%- else -%}
+    {%- assign new_url = new_base | append: "/en/blog" -%}
+  {%- endif -%}
+  <link rel="canonical" href="{{ new_url }}">
+  <meta name="robots" content="noindex, follow">
+  <meta http-equiv="refresh" content="0; url={{ new_url }}">
+  <script>window.location.replace({{ new_url | jsonify }});</script>
+
+  {%- comment -%}
+    `{% seo %}` a été retiré : il émettait son propre `canonical` vers l'ancienne
+    URL. Deux canonical concurrents sur une même page et les moteurs les
+    ignorent tous les deux — ce qui annulerait exactement ce qu'on cherche à
+    faire ici. Le reste de ses balises (og:, twitter:) n'a plus d'objet sur une
+    page en noindex qui redirige.
+  {%- endcomment -%}
+  <title>{{ page.title | default: "Keepsake Blog" }}</title>
   <link rel="icon" href="{{ site.baseurl }}/favicon.ico" type="image/x-icon">
   <link rel="icon" href="{{ site.baseurl }}/favicon.ico" sizes="16x16" type="image/x-icon">
   <meta name="author" content="Nicolas Croce">
