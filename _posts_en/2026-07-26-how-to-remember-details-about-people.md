@@ -2,7 +2,7 @@
 title: "How to Remember Details About People You Meet"
 description: "You don't forget someone's kid's name because your memory is bad. You forget it because recall was never the right tool for the job — capture is."
 date: 2026-07-26
-author: Nicolas Croce
+author: Keepsake
 tags: [contacts, relationships, method, notes]
 ref: remember-details-about-people
 ---

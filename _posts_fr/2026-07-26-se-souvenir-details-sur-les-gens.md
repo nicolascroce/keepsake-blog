@@ -2,7 +2,7 @@
 title: "Se souvenir des détails sur les gens : ce n'est pas une question de mémoire"
 description: "Le prénom de son fils, le projet dont il parlait, la ville où il déménage. Ces détails ne s'oublient pas parce que votre mémoire est mauvaise — ils s'oublient parce que rien ne les a jamais écrits."
 date: 2026-07-26
-author: Nicolas Croce
+author: Keepsake
 tags: [contacts, relations, methode, notes]
 ref: remember-details-about-people
 ---
